@@ -81,12 +81,14 @@ public class Solucion { //posiciones
     int newx = oldx;
     while (oldx == newx)
      newx = rand.nextInt(tablero.ancho - piezas[i].ancho + 1);
+    posiciones[i].x = newx;
    }
    if (rand.nextInt(2 * 100 * posiciones.length) == 0) {
     int oldy = posiciones[i].y;
     int newy = oldy;
     while (oldy == newy)
      newy = rand.nextInt(tablero.largo - piezas[i].largo + 1);
+    posiciones[i].y = newy;
    }
   }
  }
